@@ -1,0 +1,11 @@
+var CreateToDoStepAssociation = function () {
+  this.up = function (next) {
+    next();
+  };
+
+  this.down = function (next) {
+    next();
+  };
+};
+
+exports.CreateToDoStepAssociation = CreateToDoStepAssociation;

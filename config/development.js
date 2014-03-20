@@ -23,7 +23,7 @@ var config = {
 , hostname: null
 , port: 4000
 , model: {
-    defaultAdapter: 'filesystem'
+    defaultAdapter: 'sqlite'
   }
 , sessions: {
     store: 'filesystem'

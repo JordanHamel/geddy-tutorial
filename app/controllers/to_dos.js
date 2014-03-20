@@ -4,7 +4,7 @@ var ToDos = function () {
   this.index = function (req, resp, params) {
     var self = this;
 
-    geddy.model.ToDo.all(function(err, toDos) {
+    geddy.model.ToDo.all({}, {includes: 'steps'}, function(err, toDos) {
       if (err) {
         throw err;
       }
